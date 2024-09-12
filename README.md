@@ -1,38 +1,29 @@
 # ipscanner
 A simple GUI tool developed in Python that provides an easy-to-use interface for tracing the geographical location and other details of an IP address. The tool makes use of Python's built-in tkinter library to render the GUI, and the requests library to fetch the information.
+# IP Tracer Tool
 
-A simple GUI tool developed in Python that provides an easy-to-use interface for tracing the geographical location and other details of an IP address. The tool makes use of Python's built-in tkinter library to render the GUI, and the requests library to fetch the information.
+The **IP Tracer Tool** is a simple and user-friendly Python application that allows you to trace details of an IP address, including city, region, country, and more. This tool is developed using `Tkinter` for the GUI and uses the `requests` module to fetch information from the `ipinfo.io` API.
 
-Features:
+## Features
 
-IP Entry Field: This field allows users to input the IP address they want to trace.
+- Trace detailed information about any IP address.
+- Fetch city, region, country, organization, and location information.
+- Handles Bogon IP addresses.
+- User-friendly interface with an easy-to-use design.
+- Help section with user instructions.
+- Footer with contact information.
+  
+## Requirements
 
-Trace Button: After entering the IP address, clicking on the "Trace IP" button triggers the tracing process.
+To use this tool, you need to have the following libraries installed:
 
-Result Label: The information retrieved from the tracing process, including the IP's city, region, country, GPS location, and organization (if applicable) is displayed here.
+- `tkinter` (for GUI)
+- `requests` (for fetching IP information)
+  
+You can install the dependencies via `pip` by running the following command:
 
-The tool makes use of the ipinfo.io API for IP address information. For Bogon IP addresses (fake or non-routable IPs), it informs the user that the IP is a Bogon IP.
+```bash
+pip install -r requirements.txt
 
-Please note that the tool uses the free tier of ipinfo.io, which has a rate limit of 50,000 requests per month. As such, the tool is best suited for light to moderate usage.
+![image](https://github.com/user-attachments/assets/320af950-1468-47d4-8e15-397fffa2083e)
 
-Installation:
-
-You need Python 3.x and the requests library to run this tool. You can install requests via pip:
-
-bash
-Copy code
-pip install requests
-Usage:
-
-Run the script with Python 3.x.
-In the GUI, enter the IP address you want to trace.
-Click the "Trace IP" button.
-View the traced IP's information in the result box.
-Important: Always make sure you have the appropriate permissions and are respectful of privacy and ethical considerations when tracing IP addresses.
-
-Future Improvement:
-
-Extend functionality to include more detailed information about IP addresses.
-Implement error handling for rate-limited or otherwise unsuccessful requests to the ipinfo.io API.
-Implement better support for edge cases, such as reserved IP addresses.
-Disclaimer: This project is intended for educational and legitimate purposes. The author is not responsible for any misuse of this tool.
