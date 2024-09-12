@@ -25,5 +25,6 @@ You can install the dependencies via `pip` by running the following command:
 ```bash
 pip install -r requirements.txt
 
-![image](https://github.com/user-attachments/assets/320af950-1468-47d4-8e15-397fffa2083e)
+![image](https://github.com/user-attachments/assets/16cf59c3-c421-4f0a-9189-472cc51125cd)
+
 
